@@ -65,3 +65,44 @@
     true
     :else
     false))
+
+(defn scoopable [ingredient]
+  (if (scooped? ingredient)
+      "makes sense"
+      "that's weird"))
+  
+
+(scoopable :flou)
+
+(defn print-10 []
+  (dotimes [i 10]
+    (println i)))
+
+(print-10)
+
+(defn add-eggs [n]
+  (dotimes [e n]
+    (add-egg))
+  :ok)
+
+(add-eggs 2)
+
+(defn add-flour-cups [n]
+  (dotimes [e n]
+    (add-flour))
+  :ok)
+
+(defn add-milk-cups [n]
+  (dotimes [e n]
+    (add-milk))
+  :ok)
+
+(defn add-sugar-cups [n]
+  (dotimes [e n]
+    (add-sugar))
+  :ok)
+
+(defn add-butters [n]
+  (dotimes [e n]
+    (add-butter))
+  :ok)
